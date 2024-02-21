@@ -1,11 +1,12 @@
 import React from "react";
 import SwaCard from "../../swa-components/Card/SwaCard";
 import SwaAvatar from "../../swa-components/Avatar/SwaAvatar";
-import SwaChip from "../../swa-components/Chip/SwaChip";
-import SwaChip from "../../swa-components/Chip/SwaChip";
+import SwaChip from "../../swa-components/Chip/swaChip";
+// import SwaChip from "../../swa-components/Chip/SwaChip";
 import { Text } from "react-native-paper";
 import SwaActivityIndicator from "../../swa-components/ActivityIndicator/SwaActivityIndicator";
 import { View } from "react-native";
+// import SwaIcon from "../../swa-components/Icon/"
 
 function CardClass() {
   return (

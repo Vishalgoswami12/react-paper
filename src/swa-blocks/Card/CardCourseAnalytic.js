@@ -1,32 +1,43 @@
 import React from "react";
-import SwaCard from "../../swa-components/Card/SwaCard";
 import { Card, Text, View } from "react-native-paper";
+import SwaCard from "../../swa-components/Card/SwaCard";
 import SwaBadge from "../../swa-components/Badge/SwaBadge";
 import SwaIcon from "../../swa-components/Icon/SwaIcon";
+
 function CardCourseAnalytic() {
   return (
     <Card>
+      {/* First SwaCard */}
       <SwaCard
+        title="Title 1"
         subtitle="Quis autem vel eum iure rephrehendrit qui in ea voluplate velit esse qunam nihil molestiae consequatu"
         titleVariant="titleMedium"
       />
-      <View>
-        <SwaCard title="Slving Jee Past Year Question" titleVariant="titleSmall" />
-        <SwaBadge />
-        <SwaCard title="Video Lecture" titleVariant="titleSmall" />
-      </View>
-      <SwaCard>
-        content=
-        {
+      
+      {/* Second SwaCard */}
+      <SwaCard
+        title="Solving Jee Past Year Question"
+        titleVariant="titleSmall"
+        content={
           <View>
-            <View>
+            <SwaBadge />
+            <SwaCard title="Video Lecture" titleVariant="titleSmall" />
+          </View>
+        }
+      />
+      
+      {/* Third SwaCard */}
+      <SwaCard
+        content={
+          <View>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
               <SwaIcon source="duration" />
               <Card.Content>
                 <Text variant="labelSmall">9:23 PM</Text>
                 <Text>Started</Text>
               </Card.Content>
             </View>
-            <View>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
               <SwaIcon source="duration" />
               <Card.Content>
                 <Text variant="labelSmall">10:54 PM</Text>
@@ -35,18 +46,20 @@ function CardCourseAnalytic() {
             </View>
           </View>
         }
-      </SwaCard>
+      />
+      
+      {/* Fourth SwaCard */}
       <SwaCard
         content={
-          <View>
-            <View>
+          <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+            <View style={{ alignItems: "center" }}>
               <SwaIcon source="support" />
               <Text variant="titleMedium">0</Text>
               <Text variant="titleSmall">Breaks</Text>
             </View>
-            <View>
+            <View style={{ alignItems: "center" }}>
               <SwaIcon source="analytic" />
-              <Text variant="titleMedium">Preak Productivity</Text>
+              <Text variant="titleMedium">Peak Productivity</Text>
             </View>
           </View>
         }
